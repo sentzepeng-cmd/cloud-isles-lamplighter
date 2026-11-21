@@ -7,25 +7,8 @@
   <meta name="traveler-asset" content="lamplighter.glb">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='10' fill='%2318333e'/%3E%3Cg fill='none' stroke='%23ebc98b' stroke-width='2.4' stroke-linejoin='round'%3E%3Cpath d='M14 21 20 14h8l6 7-3 15-7 3-7-3Zm0 0 10 4 10-4M24 25v13M21 14V9h6v5'/%3E%3C/g%3E%3C/svg%3E"/>
   <title>云屿巡灯记 · 浮空村落</title>
-  <script type="module" crossorigin src="./assets/index-Cs0IAjBk.js"></script>
+  <script type="module" crossorigin src="./assets/index-CFP8S9Fs.js"></script>
   <link rel="stylesheet" crossorigin href="./assets/index-DAFOVql2.css">
-  <script id="game-delivery" type="application/json">{"files":{"lamplighter.glb":"./assets/lamplighter-6dd63c810fb97e13.glb.gz","maps/village.glb":"./assets/village-3fa71bbf9daf2492.glb.gz","maps/village-walk.json":"./assets/village-walk-c4f0f797abae90cd.json.gz","maps/valley.glb":"./assets/valley-9f1ce0ac1880c817.glb.gz","maps/valley-walk.json":"./assets/valley-walk-8522dca9bb3b121c.json.gz","maps/garden.glb":"./assets/garden-c27c03e349b68130.glb.gz","maps/garden-walk.json":"./assets/garden-walk-d43bdb7134daaa0d.json.gz","maps/ember.glb":"./assets/ember-a77b1ee63feccc39.glb.gz","maps/ember-walk.json":"./assets/ember-walk-d6a73ae672ef2ea5.json.gz","maps/castle.glb":"./assets/castle-1d2879431a6b8875.glb.gz","maps/castle-walk.json":"./assets/castle-walk-ce2686dd61fbd421.json.gz"},"mirror":"https://cdn.jsdelivr.net/gh/sentzepeng-cmd/cloud-isles-lamplighter@27e53ad15bbd450d5a9cc2456e5b500c1654260a/"}</script>
-  <script id="preload-island">(function preloadIsland() {
-	const { files } = JSON.parse(document.getElementById("game-delivery").textContent);
-	let current;
-	try {
-		current = JSON.parse(localStorage.getItem("cloud-isles.expedition.v2"))?.current;
-	} catch {}
-	const id = Object.hasOwn(files, "maps/" + current + ".glb") ? current : "village";
-	for (const name of ["maps/" + id + ".glb", "maps/" + id + "-walk.json"]) {
-		const preload = document.createElement("link");
-		preload.rel = "preload";
-		preload.as = "fetch";
-		preload.crossOrigin = "anonymous";
-		preload.href = files[name];
-		document.head.append(preload);
-	}
-})()</script>
 </head>
 <body data-mode="cover">
 <main id="app">
